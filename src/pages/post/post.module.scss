@@ -1,1 +1,46 @@
-// TODO
+.container {
+  img {
+    width: 100%;
+    height: 400px;
+    image-rendering: crisp-edges;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+}
+
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h1,
+  h2 {
+    color: var(--white-100);
+  }
+
+  .info {
+    max-width: 370px;
+    margin-bottom: 2rem;
+  }
+
+  .info,
+  p,
+  time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    p {
+      &+p {
+        margin: 1.2rem 0;
+      }
+    }
+  }
+}
